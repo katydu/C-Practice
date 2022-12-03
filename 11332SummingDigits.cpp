@@ -77,7 +77,7 @@ void calculateDigit(int num,int len){
 int main(int argc, char** argv){
 	int input;
 	int length;
-	int inputArray[1] = {0};
+	int inputArray[99] = {0};
 	// calculate array index
 	int count=0;
 	while(1){
@@ -93,6 +93,7 @@ int main(int argc, char** argv){
 	}
 	// start
 	for(int i=0;i<count;i++){
+		//cout << inputArray[i] << endl;
 		input = inputArray[i];
 		length = calculateLength(input);
 		calculateDigit(input,length);

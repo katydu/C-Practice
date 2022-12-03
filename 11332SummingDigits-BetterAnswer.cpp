@@ -1,6 +1,7 @@
 #include <iostream>
-
+#include <cmath>
 using namespace std;
+
 
 int f(int n){
 	int sum = 0;
@@ -16,9 +17,16 @@ int f(int n){
 }
 
 int main(int argc, char** argv){
+	int output[99]={0};
+	int count = 0;
+	int r[0];
 	int n;
-	while(cin >> n&&n)
-		cout << f(n) << endl;
-		
+	while(cin >> n && n){
+		output[count] = f(n);
+		count++;
+	} 
+	for(int i=0;i<count;i++){
+		cout << output[i]<<endl;
+	}	
 	return 0;
 }
