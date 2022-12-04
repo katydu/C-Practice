@@ -93,10 +93,8 @@ int main(int argc, char** argv){
 	}
 	// start
 	for(int i=0;i<count;i++){
-		//cout << inputArray[i] << endl;
-		input = inputArray[i];
-		length = calculateLength(input);
-		calculateDigit(input,length);
+		length = calculateLength(inputArray[i]);
+		calculateDigit(inputArray[i],length);
 	}
 	return 0;
 }
