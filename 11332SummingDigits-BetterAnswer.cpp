@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cmath>
 using namespace std;
 
 
@@ -19,7 +18,6 @@ int f(int n){
 int main(int argc, char** argv){
 	int output[99]={0};
 	int count = 0;
-	int r[0];
 	int n;
 	while(cin >> n && n){
 		output[count] = f(n);
