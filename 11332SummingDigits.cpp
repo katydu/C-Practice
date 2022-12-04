@@ -81,7 +81,7 @@ int main(int argc, char** argv){
 	// calculate array index
 	int count=0;
 	while(1){
-		cout << "½Ğ¿é¤J¼Æ­È:";
+		cout << "Please Enter:";
 		cin >> input;
 		//user enter 0 then break 
 		if(input==0){
