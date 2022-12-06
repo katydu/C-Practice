@@ -10,11 +10,7 @@ int f(int n){
 		// n = n/10
 		n /= 10;
 	}
-	if(sum < 10){
-		return sum;
-	}else{
-		return f(sum);
-	}
+	return (sum < 10) ? sum : f(sum);
 }
 
 int main(int argc, char** argv){
