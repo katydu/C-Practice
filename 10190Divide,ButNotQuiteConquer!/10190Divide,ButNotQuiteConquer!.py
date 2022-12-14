@@ -17,7 +17,7 @@ if __name__ == "__main__":
                 integer = integer//devide
                 if integer == 1:
                     output.append(integer)
-                    result.append(output)
+                    result.ppend(output)
                     break
         num+=1
     for i in range(len(result)):
