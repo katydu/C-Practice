@@ -22,8 +22,10 @@ if __name__ == "__main__":
                     break
         num+=1
     for i in range(len(result)):
+        # if output is Boring!
         if isinstance(result[i],str):
             print(result[i])
+        # if output is array
         else:
             print(' '.join(map(str,result[i])))
 
