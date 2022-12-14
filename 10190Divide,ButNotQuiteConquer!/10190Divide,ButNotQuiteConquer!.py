@@ -20,7 +20,11 @@ if __name__ == "__main__":
                     result.append(output)
                     break
         num+=1
-    print(result)
+    for i in range(len(result)):
+        if isinstance(result[i],str):
+            print(result[i])
+        else:
+            print(' '.join(map(str,result[i])))
 
         
 
