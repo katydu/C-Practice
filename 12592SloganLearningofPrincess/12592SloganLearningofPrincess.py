@@ -3,18 +3,21 @@ if __name__ == "__main__":
     i = 0
     n = 0
     slogans = {}
-    questions = {}
+    questions = []
+    output = []
     while i < int(princeNum):
         front = input()
         back = input()
         slogans[front] = back
-        #print(slogans)
         i+=1
-    princessNum = input("Enter Pricess part:")
+    princessNum = input("Enter Princess part:")
     while n < int(princessNum):
         question = input()
-        questions[question] = ""
-        print(questions)
+        questions.append(question)
         n+=1
+    for index in range(len(questions)):
+        output.append(slogans.get(questions[index]))
+    for num in range(len(output)):
+        print(output[num])
     
     
