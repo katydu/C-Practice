@@ -1,17 +1,9 @@
 if __name__ == "__main__":
     time = 0
-    a = []
-    b = []
-    n = []
-    m = []
+    a,b,n,m = [0] * 26,[0] * 26,[0] * 26,[0] * 26
     while(time<2):
         FirstString = input("Enter First String:")
         SecondString = input("Enter Second String:")
-        for i in range(26):
-            a.append(0)
-            b.append(0)
-            n.append(0)
-            m.append(0)
         for i in range(len(FirstString)):
             a[ord(FirstString[i])-ord('A')] +=1
             b[ord(SecondString[i])-ord('A')] +=1
