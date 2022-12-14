@@ -2,8 +2,9 @@ if __name__ == "__main__":
     num = 0
     result = []
     while num<4:
-        s1 = input("Enter number that will be divided:")
-        s2 = input("Enter number that will divide the former one:")
+        s = input().split()
+        s1 = s[0]
+        s2 = s[1]
         integer = int(s1)
         devide = int(s2)
         output = []
@@ -17,7 +18,7 @@ if __name__ == "__main__":
                 integer = integer//devide
                 if integer == 1:
                     output.append(integer)
-                    result.ppend(output)
+                    result.append(output)
                     break
         num+=1
     for i in range(len(result)):
