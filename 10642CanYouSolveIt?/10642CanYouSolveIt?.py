@@ -2,7 +2,7 @@ if __name__ == "__main__":
     output = []
     cases_input = input("Enter number of test cases:")
     cases = int(cases_input)
-    while int(cases)>0:
+    while cases > 0:
         count = 0
         coordinate = input("Enter Coordinates:").split()
         Sx = int(coordinate[0])
